@@ -1,28 +1,119 @@
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #2f2f37;
-  max-width: 960px;
-  padding: 16px;
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width:480px;
+  }
+  
+  @media screen and (min-width:768px) {
+    width:768px;
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 1200px;
+  }
 }
 
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #ff6b0a;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+svg{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.example .background {
-  height: 240px;
-  // ❗️❗️❗️ The path to images from a SASS file
-  // is always the same as from the css folder.
-  background-image: url('../images/logo.png');
-  background-size: cover;
-  background-position: center;
+h2,p{
+  margin: 0px;
+}
+
+ul{
+  padding: 0px;
+}
+
+li{
+  list-style:none;
+}
+
+.notes-table{
+  padding-bottom: 30px;
+}
+
+table{
+  border-collapse: separate;
+  border-spacing: 0px 11px;
+  width: 100%;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align:left;
+  // border: 1px solid #2a2a2a;
+}
+
+table th:first-child{
+  border-top-left-radius: 10px;
+}
+
+table th:last-child{
+  border-top-right-radius: 10px;
+  
+}
+
+
+table th{
+  color:white;
+  background-color: gray;
+  margin-bottom: 10px;
+}
+
+table td{
+  background-color: skyblue;
+}
+
+.round-icon{
+  margin: 0 auto;
+  background-color: azure;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+button{
+  display: flex;
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  transition: all .2s;
+}
+
+svg{
+  transition: all .3s;
+}
+
+.btn-svg--white{
+  fill:white
+}
+
+.btn-svg--white-hover:hover{
+  fill:white;
+}
+
+.create-btn{
+  padding: 15px;
+  border-radius: 10px;
+  background-color: burlywood;
+  transition: all .3s;
+  &:hover{
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
+  }
+}
+
+.general-info-table{
+  padding-top: 100px;
 }
